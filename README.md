@@ -11,11 +11,6 @@ Vue 2.6.11
 
 ## Getting started
 
-Установите NPM
-```
-npm install
-```
-
 ```
 git clone https://github.com/luzanna/bank
 ```
