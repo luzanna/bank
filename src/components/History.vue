@@ -81,11 +81,90 @@
         .pay-block{
             background: #f7f8f8;
             display: block;
-            width: 580px;
+
+            width: 70vw;
+            min-width: 580px;
+            max-width: 780px;
+
+            /*width: 50vw;*/
+            /*min-width: 580px;*/
             height: 565px;
             text-align: left;
             padding: 30px;
             font-size: small;
+        }
+
+        label{
+            color: #8494ab;
+        }
+
+        .pay-info{
+            display: block;
+            color: #8494ab;
+            width: inherit;
+            font-size: small;
+        }
+
+        .info{
+            display: inline-block;
+        }
+        .pay-info-block{
+            display: inline-block;
+            margin-top: 13px;
+            width: 170px;
+        }
+
+        .label-info{
+            margin-top: 15px;
+        }
+        .data{
+            color: #5e6165;
+        }
+
+
+        .band{
+            margin-top: 15px;
+            /*margin-bottom: 20px;*/
+            height: 40px;
+            background: #e4e9ee;
+            width: 420px;
+            margin-left: -30px;
+
+        }
+
+        /*информация о карте*/
+        .card-data{
+            margin-top: 20px;
+            display: inline-block;
+            color: #8494ab;
+            border: 1px solid #e4e9ee;
+            border-radius: 10px;
+            padding: 30px;
+            width: 360px;
+        }
+
+
+
+
+
+        /*footer*/
+        .text-info{
+            background: #373c43;
+            width: 70vw;
+            min-width: 580px;
+            max-width: 780px;
+            padding: 30px;
+
+        }
+
+        label{
+            color: #8494ab;
+        }
+
+        p{
+            color: #89909d;
+            text-align: left;
+            font-size: x-small;
         }
     }
 
@@ -101,69 +180,225 @@
             /*padding-left: 100px;*/
         }
 
+        label{
+            color: #8494ab;
+        }
+
+        .pay-info{
+            display: block;
+            color: #8494ab;
+            width: inherit;
+            font-size: small;
+        }
+
+        .info{
+            display: inline-block;
+        }
+        .pay-info-block{
+            display: inline-block;
+            margin-top: 13px;
+            width: 170px;
+        }
+
+        .label-info{
+            margin-top: 15px;
+        }
+        .data{
+            color: #5e6165;
+        }
+
+
+        .band{
+            margin-top: 15px;
+            /*margin-bottom: 20px;*/
+            height: 40px;
+            background: #e4e9ee;
+            width: 420px;
+            margin-left: -30px;
+
+        }
+
+        /*информация о карте*/
+        .card-data{
+            margin-top: 20px;
+            display: inline-block;
+            color: #8494ab;
+            border: 1px solid #e4e9ee;
+            border-radius: 10px;
+            padding: 30px;
+            width: 360px;
+        }
+
+        /*footer*/
+        .text-info{
+            background: #373c43;
+            width: 580px;
+            padding: 30px;
+
+        }
+        p{
+            color: #89909d;
+            text-align: left;
+            font-size: x-small;
+        }
+
+
     }
 
-    label{
-        color: #8494ab;
+    @media screen and (min-width: 480px) {
+
+        .pay-block{
+            background: #f7f8f8;
+            display: block;
+            width: 95%;
+            height: 465px;
+            text-align: left;
+            padding: 20px;
+            font-size: small;
+        }
+        /*footer*/
+        .text-info{
+            background: #373c43;
+            width: 95%;
+            padding: 20px;
+
+        }
+
+        label{
+            color: #8494ab;
+        }
+
+
+        .pay-info{
+            display: block;
+            color: #8494ab;
+            width: inherit;
+            font-size: small;
+        }
+
+        .info{
+            display: inline-block;
+        }
+        .pay-info-block{
+            display: inline-block;
+            margin-top: 13px;
+            width: 170px;
+        }
+
+        .label-info{
+            margin-top: 15px;
+        }
+        .data{
+            color: #5e6165;
+        }
+
+
+        .band{
+            margin-top: 15px;
+            /*margin-bottom: 20px;*/
+            height: 40px;
+            background: #e4e9ee;
+            width: 420px;
+            margin-left: -30px;
+
+        }
+
+        /*информация о карте*/
+        .card-data{
+            margin-top: 20px;
+            display: inline-block;
+            color: #8494ab;
+            border: 1px solid #e4e9ee;
+            border-radius: 10px;
+            padding: 30px;
+            width: 360px;
+        }
+
+        p{
+            color: #89909d;
+            text-align: left;
+            font-size: x-small;
+        }
+
     }
 
-    .pay-info{
-        display: block;
-        color: #8494ab;
-        width: inherit;
-        font-size: small;
+    @media screen and (min-width: 320px) {
+        .pay-block{
+            background: #f7f8f8;
+            display: block;
+            width: 96%;
+            height: 465px;
+            text-align: left;
+            padding: 7px;
+            font-size: small;
+        }
+
+
+        .pay-info{
+            display: block;
+            color: #8494ab;
+            width: inherit;
+            font-size: small;
+        }
+
+        .info{
+            display: inline-block;
+        }
+        .pay-info-block{
+            display: inline-block;
+            margin-top: 13px;
+            width: 170px;
+        }
+
+        .label-info{
+            margin-top: 15px;
+        }
+        .data{
+            color: #5e6165;
+        }
+
+
+        .band{
+            margin-top: 15px;
+            /*margin-bottom: 20px;*/
+            height: 40px;
+            background: #e4e9ee;
+            width: 420px;
+            margin-left: -30px;
+
+        }
+
+        /*информация о карте*/
+        .card-data{
+            margin-top: 20px;
+            display: inline-block;
+            color: #8494ab;
+            border: 1px solid #e4e9ee;
+            border-radius: 10px;
+            padding: 30px;
+            width: 360px;
+        }
+
+
+        /*footer*/
+        .text-info{
+            background: #373c43;
+            width: 96%;
+            padding: 7px;
+
+        }
+
+        label{
+            color: #8494ab;
+        }
+
+        p{
+            color: #89909d;
+            text-align: left;
+            font-size: x-small;
+        }
+
     }
 
-    .info{
-        display: inline-block;
-    }
-    .pay-info-block{
-        display: inline-block;
-        margin-top: 13px;
-        width: 170px;
-    }
-
-    .label-info{
-        margin-top: 15px;
-    }
-    .data{
-        color: #5e6165;
-    }
-
-
-    .band{
-        margin-top: 15px;
-        /*margin-bottom: 20px;*/
-        height: 40px;
-        background: #e4e9ee;
-        width: 420px;
-        margin-left: -30px;
-
-    }
-
-    /*информация о карте*/
-    .card-data{
-        margin-top: 20px;
-        display: inline-block;
-        color: #8494ab;
-        border: 1px solid #e4e9ee;
-        border-radius: 10px;
-        padding: 30px;
-        width: 360px;
-    }
-
-
-    /*footer*/
-    .text-info{
-        background: #373c43;
-        width: 580px;
-        padding: 30px;
-
-    }
-    p{
-        color: #89909d;
-        text-align: left;
-        font-size: x-small;
-    }
-
+  
 </style>
