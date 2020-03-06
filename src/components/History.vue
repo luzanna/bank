@@ -83,11 +83,8 @@
             display: block;
 
             width: 70vw;
-            min-width: 580px;
-            max-width: 780px;
-
-            /*width: 50vw;*/
-            /*min-width: 580px;*/
+            min-width: 380px;
+            max-width: 580px;
             height: 565px;
             text-align: left;
             padding: 30px;
@@ -111,7 +108,7 @@
         .pay-info-block{
             display: inline-block;
             margin-top: 13px;
-            width: 170px;
+            width: 130px;
         }
 
         .label-info{
@@ -127,7 +124,7 @@
             /*margin-bottom: 20px;*/
             height: 40px;
             background: #e4e9ee;
-            width: 420px;
+            width: 400px;
             margin-left: -30px;
 
         }
@@ -140,11 +137,8 @@
             border: 1px solid #e4e9ee;
             border-radius: 10px;
             padding: 30px;
-            width: 360px;
+            width: 310px;
         }
-
-
-
 
 
         /*footer*/
@@ -152,7 +146,7 @@
             background: #373c43;
             width: 70vw;
             min-width: 580px;
-            max-width: 780px;
+            max-width: 580px;
             padding: 30px;
 
         }
@@ -172,7 +166,8 @@
         .pay-block{
             background: #f7f8f8;
             display: block;
-            width: 620px;
+            min-width: 480px;
+            max-width: 580px;
             min-height: 565px;
             text-align: left;
             padding: 10px;
@@ -232,7 +227,8 @@
         /*footer*/
         .text-info{
             background: #373c43;
-            width: 580px;
+            min-width: 480px;
+            max-width: 580px;
             padding: 30px;
 
         }
@@ -400,5 +396,5 @@
 
     }
 
-  
+
 </style>
