@@ -1,11 +1,29 @@
 # bank
 
-## Project setup
+Приложение реализует частичный функционал оплаты счетов  и хранит информацию об оплате. 
+При вводе данных пользователем происходит валидация. После успешной отправки формы пользователь попадает на страницу
+успешной оплаты, где предоставлена информация о последней транзакции. По прямой ссылке на эту страницу доступа нет.
+Также приложение сохраняет данные по всем транзакциям и выводит на отдельной странице.
+
+# Technical specifications
+
+Vue 2.6.11
+
+## Getting started
+
+Установите NPM
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+```
+git clone https://github.com/luzanna/bank
+```
+
+```
+cd bank
+```
+
 ```
 npm run serve
 ```
@@ -14,12 +32,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-"# Bank" 
