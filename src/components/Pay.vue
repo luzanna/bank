@@ -10,8 +10,10 @@
                     </div>
                     <div class="pay-info-block">
                         <input class="data" maxlength="16" minlength="16" pattern="[0-9]{16}" v-model="bankAccount">
-                        <input class="data" minlength="1" pattern="[0-9]{1,}" v-model="price">
-<!--                        <label>руб.</label>-->
+
+                        <input class="data"
+                               onkeydown="this.style.width = ((this.value.length + 1) * 8) + 'px';"
+                               minlength="1" pattern="[0-9]{1,}" v-model="price">
                     </div>
                 </div>
             </div>
@@ -140,7 +142,7 @@
         },
 
         mounted(){
-            // localStorage.clear();
+
             // получение значений старых транзакций из JSON и превращение в объект
             if (localStorage.getItem('transactions')) {
                 this.transactions = JSON.parse(localStorage.getItem('transactions'));
@@ -189,13 +191,7 @@
 
             // проверка корректности данных, введенных пользователем + преобразование формата даты
             // + добавление транзакции, если данные корректные
-            checkData(){
-                // localStorage.clear();
-                // alert("go to checkdata")
-
-
-                //// добавить цену и номер счета!!!!
-
+            checkData() {
 
                 if (
                     this.card1 != null &&
@@ -204,8 +200,8 @@
                     this.card4 != null &&
                     this.selectDay != null &&
                     this.selectYear != null &&
-                    // this.bankAccount != null &&
-                    // this.price != null &&
+                    this.bankAccount != null &&
+                    this.price != null &&
                     this.payer != null &&
                     this.cvc != null) {
                         return true;
@@ -226,12 +222,11 @@
                 return this.datePay = [dayPayment, monthPayment, yearPayment];
             },
 
+            // проверка на пустой ввод, добавление транзакций в localStorage,
+            // форматирование даты
             // передача данных о транзакции в родительский компонент App
             learn(){
-                if (this.checkData()) {
-
-                    // localStorage.clear();
-
+                if ( this.checkData()) {
 
                     this.getDateOfPay();
                     this.addTransaction();
@@ -244,10 +239,8 @@
                         accounts: this.accounts,
                         dates: this.dates,
                     });
-                    this.$router.push({ path: 'History'});
-
-
-                } else return alert("Поля пустые")
+                    this.$router.push({ path: 'Successful_Pay'});
+                } else return false
             },
         }
     }
@@ -313,7 +306,8 @@
             color: #5e6165;
             background: #f7f8f8;
             border: none;
-            height: 28px;
+            width: fit-content;
+            /*height: 24px;*/
             /*margin-top: 17px;*/
         }
 
@@ -434,11 +428,6 @@
             margin-top: 30px;
             margin-left: 45px;
         }
-
-
-
-
-
 
 
         /*footer*/
@@ -768,21 +757,6 @@
             padding-left: 10px;
         }
 
-        /*.private-info{*/
-        /*    position: absolute;*/
-        /*    top: 300px;*/
-        /*    left: 500px;*/
-        /*    z-index: 1;*/
-        /*    display: block;*/
-        /*    color: #8494ab;*/
-        /*    border: 1px solid #e4e9ee;*/
-        /*    border-radius: 10px;*/
-        /*    padding: 0px;*/
-        /*    width: 370px;*/
-        /*    height: 235px;*/
-        /*    text-align: right;*/
-
-        /*}*/
 
         .band{
             margin-top: 20px;
@@ -1031,9 +1005,6 @@
     }
 
 
-
-
-
     .card-data{
         position: relative;
         z-index: 3;
@@ -1048,22 +1019,11 @@
     }
 
 
-    .validity{
-        margin-top: 10px;
-        margin-right: 10px;
-        margin-bottom: 5px;
-        z-index: 2;
-        /*margin-left: 5px;*/
-        width: auto;
-        color: #5e6165;
-    }
-
-
     .private-info{
         position: absolute;
         top: 270px;
         /*top: 300px;*/
-        left: 40%;
+        left: 46%;
         z-index: 1;
         display: block;
         color: #8494ab;
@@ -1076,23 +1036,4 @@
 
     }
 
-
-    .text-info{
-        background: #373c43;
-        width: 30vw;
-        min-width: 580px;
-        max-width: 780px;
-        padding: 30px;
-
-    }
-
-    label{
-        color: #8494ab;
-    }
-
-    p{
-        color: #89909d;
-        text-align: left;
-        font-size: x-small;
-    }
 </style>
