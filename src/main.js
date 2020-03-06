@@ -13,11 +13,11 @@ Vue.use(Router);
       component: () => import('./components/Pay.vue'),
     },
       {
-          path:'/history',
+          path:'/successful_pay',
           component: () => import('./components/History.vue'),
       },
     {
-      path:'/successful_pay',
+      path:'/history',
       component: () => import('./components/Successful_Pay.vue'),
     },
     {
@@ -33,3 +33,4 @@ new Vue({
   router,
   render: h => h(App),
 }).$mount('#app');
+
