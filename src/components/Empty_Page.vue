@@ -36,15 +36,40 @@
 
 <style scoped>
 
-  @media screen and (min-width: 1000px){
+  @media screen and (min-width: 1000px) {
     .pay-block{
       background: #f7f8f8;
       display: block;
-      width: 580px;
+
+      width: 70vw;
+      min-width: 580px;
+      max-width: 780px;
+
+      /*width: 50vw;*/
+      /*min-width: 580px;*/
       height: 565px;
       text-align: left;
       padding: 30px;
       font-size: small;
+    }
+    /*footer*/
+    .text-info{
+      background: #373c43;
+      width: 70vw;
+      min-width: 580px;
+      max-width: 780px;
+      padding: 30px;
+
+    }
+
+    label{
+      color: #8494ab;
+    }
+
+    p{
+      color: #89909d;
+      text-align: left;
+      font-size: x-small;
     }
   }
 
@@ -52,30 +77,97 @@
     .pay-block{
       background: #f7f8f8;
       display: block;
-      width: 620px;
-      min-height: 565px;
+      width: 70vw;
+      min-width: 480px;
+      max-width: 580px;
+      height: 565px;
       text-align: left;
-      padding: 10px;
+      padding: 30px;
       font-size: small;
+      min-height: 565px;
+
+    }
+    /*footer*/
+    .text-info{
+      background: #373c43;
+      width: 70vw;
+      min-width: 480px;
+      max-width: 580px;
+      padding: 30px;
+
+    }
+
+    label{
+      color: #8494ab;
+    }
+
+    p{
+      color: #89909d;
+      text-align: left;
+      font-size: x-small;
     }
 
   }
 
-  label{
-    color: #8494ab;
+  @media screen and (min-width: 480px) {
+    .pay-block{
+      background: #f7f8f8;
+      display: block;
+      width: 95%;
+      height: 465px;
+      text-align: left;
+      padding: 20px;
+      font-size: small;
+    }
+    /*footer*/
+    .text-info{
+      background: #373c43;
+      width: 95%;
+      padding: 20px;
+
+    }
+
+    label{
+      color: #8494ab;
+    }
+
+    p{
+      color: #89909d;
+      text-align: left;
+      font-size: x-small;
+    }
+
   }
 
-  /*footer*/
-  .text-info{
-    background: #373c43;
-    width: 580px;
-    padding: 30px;
+  @media screen and (min-width: 320px) {
+    .pay-block{
+      background: #f7f8f8;
+      display: block;
+      width: 96%;
+      height: 465px;
+      text-align: left;
+      padding: 7px;
+      font-size: small;
+    }
+    /*footer*/
+    .text-info{
+      background: #373c43;
+      width: 96%;
+      padding: 7px;
 
-  }
-  p{
-    color: #89909d;
-    text-align: left;
-    font-size: x-small;
+    }
+
+    label{
+      color: #8494ab;
+    }
+
+    p{
+      color: #89909d;
+      text-align: left;
+      font-size: x-small;
+    }
+
   }
 
 </style>
+
