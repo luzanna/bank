@@ -28,7 +28,7 @@ npm run serve
 ```
 npm run build
 ```
-## Scrins
+## Screens
 
 Страница оплаты
 
